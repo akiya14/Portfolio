@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom right, #e8f3ff, #f5f9ff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header-text h1 {
+    font-size: 38px;
+    margin: 0;
+}
+
+.header-text p {
+    margin: 5px 0;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.header-actions {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e6eeff;
+    border-color: #7aa7ff;
+}
+
+section {
+    background: #ffffffcc;
+    padding: 20px 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    border-bottom: 2px solid #c7dbff;
+    padding-bottom: 5px;
+}
+
+ul {
+    margin-left: 20px;
+    line-height: 1.7;
+}
+
+/* Profile Picture */
+#profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+#profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+body.dark {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+body.dark section {
+    background: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+body.dark h2 {
+    border-bottom: 2px solid #555;
+}
+
+body.dark button {
+    background: #1e1e1e;
+    border-color: #444;
+    color: #f5f5f5;
+}
+
+body.dark button:hover {
+    background: #2b2b2b;
+    border-color: #888;
+}
+
+body.dark #profile-img {
+    border: 4px solid #333;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
