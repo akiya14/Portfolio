@@ -1,2 +1,3 @@
-# ortfolio
-M1FA1 Portfolio Task by Murai Akiya
+# Portfolio
+
+Personal portfolio for Akiya B. Murai.

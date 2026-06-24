@@ -1,117 +1,242 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Akiya B. Murai – Portfolio</title>
-   <link rel="stylesheet" href="style.css">
+   <meta http-equiv="Cache-Control" content="no-store">
+   <meta name="description" content="Portfolio of Akiya B. Murai, BS Information Systems student and web project builder.">
+   <title>Akiya B. Murai | Portfolio</title>
+   <link rel="stylesheet" href="style.css?v=badges-awards">
 </head>
-
 <body>
-   <header>
-      <div class="header-top">
-         <div class="header-text">
-            <h1 id="name">Akiya B. Murai</h1>
-            <p id="course">Bachelor of Science in Information Systems</p>
-            <p id="school">Mapúa Malayan Colleges Mindanao</p>
+   <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+         <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#achievements">Awards</a>
          </div>
+         <div class="header-actions" aria-label="Display controls">
+            <button id="theme-toggle" type="button" aria-label="Switch color theme">Theme</button>
+            <button id="wallpaper-toggle" type="button" aria-label="Change wallpaper">Wallpaper</button>
+         </div>
+      </nav>
 
-```
-     <div class="header-actions">
-        <button id="theme-toggle">Switch Theme</button>
-        <button id="wallpaper-toggle">Change Wallpaper</button>
-     </div>
-  </div>
-```
-
+      <section class="hero" id="top">
+         <div class="hero-copy">
+            <p class="eyebrow">BS Information Systems Student</p>
+            <h1>Akiya B. Murai</h1>
+            <p class="hero-text">
+               I build practical web projects, system prototypes, and student-focused tools with clean interfaces and useful flows.
+            </p>
+            <div class="hero-badges" aria-label="Portfolio highlights">
+               <span>Web Apps</span>
+               <span>Information Systems</span>
+               <span>Student Developer</span>
+            </div>
+            <div class="hero-actions">
+               <a class="button primary" href="#projects">View Projects</a>
+               <a class="button secondary" href="https://github.com/akiya14" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+         </div>
+         <div class="profile-panel" aria-label="Profile summary">
+            <img src="profile.jpg" id="profile-img" alt="Portrait of Akiya B. Murai">
+            <div>
+               <p class="panel-label">Currently studying at</p>
+               <p class="panel-title">Map&uacute;a Malayan Colleges Mindanao</p>
+            </div>
+         </div>
+      </section>
    </header>
 
-   <!-- Profile Picture Section -->
-
-   <section id="profile">
-      <img src="profile.jpg" id="profile-img" alt="Profile Picture of Akiya B. Murai">
-   </section>
-
    <main>
+      <section class="section intro-section" aria-labelledby="about-title">
+         <div>
+            <p class="section-kicker">About</p>
+            <h2 id="about-title">Focused on useful systems and thoughtful web experiences.</h2>
+         </div>
+         <p>
+            I am a Bachelor of Science in Information Systems student who enjoys turning class requirements, team ideas,
+            and real workflow problems into working applications. My project work includes APIs, dashboards, web apps,
+            digital wallets, and productivity tools.
+         </p>
+      </section>
 
-```
-  <!-- Educational Background -->
-  <section id="education">
-     <h2>Educational Background</h2>
-     <ul>
-        <li>Elementary: Yagi Method Children’s Academy (2013–2018), McArthur Highway, Toril, Davao City</li>
-        <li>Junior High School: Davao Central College (2018–2021), Sto. Cristo Rasay St., Toril, Davao City</li>
-        <li>Senior High School: Davao Central College (2023–2024), Sto. Cristo Rasay St., Toril, Davao City</li>
-        <li>College (1st Year – 2nd Year): Mapúa Malayan Colleges Mindanao (2024–Present)</li>
-     </ul>
-  </section>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+         <div class="section-heading">
+            <p class="section-kicker">Work</p>
+            <h2 id="projects-title">Featured Projects</h2>
+         </div>
 
-  <!-- Achievements -->
-  <section id="achievements">
-     <h2>Achievements/Certifications</h2>
-     <ul>
-        <li>Academic Excellence Award – With Honors (Grade 11, S.Y. 2022–2023)</li>
-        <li>Academic Excellence Award – With Honors (Grade 12, S.Y. 2023–2024)</li>
-        <li>Dean’s Lister – First Year, Mapúa Malayan Colleges Mindanao</li>
-     </ul>
-  </section>
+         <div class="project-grid">
+            <article class="project-card featured">
+               <div>
+                  <p class="project-type">Live Web App</p>
+                  <h3>CoreSync</h3>
+                  <p>A deployed web project added to the portfolio as a featured application.</p>
+               </div>
+               <a href="https://coresync-lyart.vercel.app/" target="_blank" rel="noopener noreferrer">Open Project</a>
+            </article>
 
-  <!-- Previous Projects -->
-  <section id="projects">
-     <h2>Previous Projects</h2>
-     <ul>
-        <li>RevUp – Inventory and Revenue Tracking System</li>
-        <li>EcoCycle – Sustainability and recycling initiative</li>
-        <li>HKY E-Wallet – Digital wallet transaction system</li>
-     </ul>
-  </section>
+            <article class="project-card featured">
+               <div>
+                  <p class="project-type">Live Web App</p>
+                  <h3>Fellowship Hub</h3>
+                  <p>A deployed login-based web application added as a current portfolio project.</p>
+               </div>
+               <a href="https://fellowshiphub.vercel.app/login" target="_blank" rel="noopener noreferrer">Open Project</a>
+            </article>
 
-  <!-- Week 3 Machine Problems -->
-  <section id="week3-machine-problem">
-     <h2>Week 3 Machine Problem</h2>
-     <ul>
-        <li>
-           <a href="https://akiya14.github.io/Machine-Problem-4_Murai/" target="_blank">
-              Machine Problem 4: CountCharacters
-           </a>
-        </li>
-        <li>
-           <a href="https://akiya14.github.io/Machine-Problem-5_Murai/" target="_blank">
-              Machine Problem 5: EmailCheck
-           </a>
-        </li>
-     </ul>
-  </section>
+            <article class="project-card">
+               <div>
+                  <p class="project-type">M2 Summative Exam</p>
+                  <h3>StudyPace Web App</h3>
+                  <p>A study productivity web app created for the M2 summative exam.</p>
+               </div>
+               <a href="https://studypase-webapp.vercel.app/" target="_blank" rel="noopener noreferrer">Open Project</a>
+            </article>
 
-  <!-- M1 Summative Exam -->
-  <section id="m1-summative-exam">
-     <h2>M1 Summative Exam</h2>
-     <ul>
-        <li>
-           <a href="https://catbreedsapi-bymurai.vercel.app/" target="_blank">
-              M1 Summative Exam – Part 3_MURAI (Cat Breeds API Web Application)
-           </a>
-        </li>
-     </ul>
-  </section>
+            <article class="project-card">
+               <div>
+                  <p class="project-type">M1 Summative Exam</p>
+                  <h3>Cat Breeds API Web Application</h3>
+                  <p>A web application using a cat breeds API for browsing breed information.</p>
+               </div>
+               <a href="https://catbreedsapi-bymurai.vercel.app/" target="_blank" rel="noopener noreferrer">Open Project</a>
+            </article>
 
-  <!-- NEW SECTION: M2 Summative Exam -->
-  <section id="m2-summative-exam">
-     <h2>M2 Summative Exam</h2>
-     <ul>
-        <li>
-           <a href="https://studypase-webapp.vercel.app/" target="_blank">
-              M2 Summative Exam – StudyPace Web App
-           </a>
-        </li>
-     </ul>
-  </section>
-```
+            <article class="project-card">
+               <div>
+                  <p class="project-type">Machine Problem</p>
+                  <h3>CountCharacters</h3>
+                  <p>A JavaScript exercise for counting and handling character input.</p>
+               </div>
+               <a href="https://akiya14.github.io/Machine-Problem-4_Murai/" target="_blank" rel="noopener noreferrer">Open Project</a>
+            </article>
 
+            <article class="project-card">
+               <div>
+                  <p class="project-type">Machine Problem</p>
+                  <h3>EmailCheck</h3>
+                  <p>A validation exercise for checking email input and user feedback.</p>
+               </div>
+               <a href="https://akiya14.github.io/Machine-Problem-5_Murai/" target="_blank" rel="noopener noreferrer">Open Project</a>
+            </article>
+         </div>
+      </section>
+
+      <section class="section split-section" aria-labelledby="systems-title">
+         <div>
+            <p class="section-kicker">Systems</p>
+            <h2 id="systems-title">Earlier Project Experience</h2>
+         </div>
+         <ul class="pill-list">
+            <li>RevUp Inventory and Revenue Tracking System</li>
+            <li>EcoCycle Sustainability and Recycling Initiative</li>
+            <li>HKY E-Wallet Digital Transaction System</li>
+         </ul>
+      </section>
+
+      <section class="section timeline-section" id="education" aria-labelledby="education-title">
+         <div class="section-heading">
+            <p class="section-kicker">Learning</p>
+            <h2 id="education-title">Educational Background</h2>
+         </div>
+         <ol class="timeline">
+            <li>
+               <span>2024 - Present</span>
+               <strong>Map&uacute;a Malayan Colleges Mindanao</strong>
+               <p>Bachelor of Science in Information Systems</p>
+            </li>
+            <li>
+               <span>2023 - 2024</span>
+               <strong>Davao Central College</strong>
+               <p>Senior High School, Sto. Cristo Rasay St., Toril, Davao City</p>
+            </li>
+            <li>
+               <span>2018 - 2021</span>
+               <strong>Davao Central College</strong>
+               <p>Junior High School, Sto. Cristo Rasay St., Toril, Davao City</p>
+            </li>
+            <li>
+               <span>2013 - 2018</span>
+               <strong>Yagi Method Children's Academy</strong>
+               <p>Elementary, McArthur Highway, Toril, Davao City</p>
+            </li>
+         </ol>
+      </section>
+
+      <section class="section certifications-section" id="certifications" aria-labelledby="certifications-title">
+         <div class="section-heading">
+            <p class="section-kicker">Credentials</p>
+            <h2 id="certifications-title">Badges and Certifications</h2>
+         </div>
+         <div class="certification-grid">
+            <article class="certification-card">
+               <img src="badge-java.png" alt="IT Specialist Java badge from Pearson">
+               <div>
+                  <span>Certification</span>
+                  <h3>IT Specialist - Java</h3>
+                  <p>Issued by Certiport, a Pearson VUE business. Demonstrates foundational Java, debugging, and object-oriented programming skills.</p>
+                  <ul class="skill-tags" aria-label="Java badge skills">
+                     <li>Java</li>
+                     <li>Object-Oriented Programming</li>
+                  </ul>
+               </div>
+            </article>
+
+            <article class="certification-card">
+               <img src="badge-aws-cloud-foundations.png" alt="AWS Academy Cloud Foundations training badge">
+               <div>
+                  <span>Learning Badge</span>
+                  <h3>AWS Academy Graduate - Cloud Foundations</h3>
+                  <p>Issued by Amazon Web Services Training and Certification after completing AWS Academy Cloud Foundations coursework.</p>
+                  <ul class="skill-tags" aria-label="AWS badge skills">
+                     <li>AWS</li>
+                     <li>Cloud Foundations</li>
+                     <li>Cloud Computing</li>
+                  </ul>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <section class="section achievements-section" id="achievements" aria-labelledby="achievements-title">
+         <div class="section-heading">
+            <p class="section-kicker">Recognition</p>
+            <h2 id="achievements-title">Achievements</h2>
+         </div>
+         <div class="achievement-grid">
+            <article>
+               <span>Grade 11</span>
+               <h3>With Honors</h3>
+               <p>Academic Excellence Award, S.Y. 2022-2023</p>
+            </article>
+            <article>
+               <span>Grade 12</span>
+               <h3>With Honors</h3>
+               <p>Academic Excellence Award, S.Y. 2023-2024</p>
+            </article>
+            <article>
+               <span>College</span>
+               <h3>Dean's Lister</h3>
+               <p>First Year, Map&uacute;a Malayan Colleges Mindanao</p>
+            </article>
+            <article>
+               <span>College</span>
+               <h3>Dean's Lister</h3>
+               <p>Second Year, Map&uacute;a Malayan Colleges Mindanao</p>
+            </article>
+         </div>
+      </section>
    </main>
 
-   <script src="script.js"></script>
+   <footer class="site-footer">
+      <p>Portfolio by Akiya B. Murai</p>
+      <a href="#top">Back to top</a>
+   </footer>
 
+   <script src="script.js?v=badges-awards"></script>
 </body>
 </html>
