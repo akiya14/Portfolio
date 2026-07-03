@@ -432,6 +432,10 @@ main {
     grid-column: auto;
 }
 
+.certification-card.certificate-featured {
+    grid-column: span 1;
+}
+
 .certification-card.certificate-wide img {
     width: 100%;
     aspect-ratio: 16 / 10;
