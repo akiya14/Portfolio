@@ -401,14 +401,14 @@ main {
 
 .certification-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
 }
 
 .certification-card {
     display: grid;
-    grid-template-columns: 130px 1fr;
-    gap: 22px;
+    grid-template-columns: 1fr;
+    gap: 18px;
     align-items: center;
     min-height: 246px;
     padding: 22px;
@@ -420,7 +420,7 @@ main {
 }
 
 .certification-card img {
-    width: 100%;
+    width: min(180px, 100%);
     aspect-ratio: 1;
     object-fit: contain;
     padding: 10px;
@@ -429,11 +429,11 @@ main {
 }
 
 .certification-card.certificate-wide {
-    grid-column: 1 / -1;
-    grid-template-columns: minmax(260px, 0.72fr) 1fr;
+    grid-column: auto;
 }
 
 .certification-card.certificate-wide img {
+    width: 100%;
     aspect-ratio: 16 / 10;
     padding: 0;
     object-fit: cover;
@@ -550,10 +550,6 @@ main {
     }
 
     .certification-card {
-        grid-template-columns: 96px 1fr;
-    }
-
-    .certification-card.certificate-wide {
         grid-template-columns: 1fr;
     }
 
