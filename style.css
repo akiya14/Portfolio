@@ -428,6 +428,18 @@ main {
     background: color-mix(in srgb, var(--surface-strong) 78%, white);
 }
 
+.certification-card.certificate-wide {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(260px, 0.72fr) 1fr;
+}
+
+.certification-card.certificate-wide img {
+    aspect-ratio: 16 / 10;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
 .certification-card span {
     display: inline-flex;
     margin-bottom: 8px;
@@ -457,6 +469,17 @@ main {
     color: var(--accent-2);
     font-size: 0.84rem;
     font-weight: 800;
+}
+
+.certificate-link {
+    width: fit-content;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 12px;
+    border-bottom: 2px solid var(--accent-3);
+    color: var(--ink);
+    font-weight: 900;
 }
 
 .achievement-grid article {
@@ -530,6 +553,10 @@ main {
         grid-template-columns: 96px 1fr;
     }
 
+    .certification-card.certificate-wide {
+        grid-template-columns: 1fr;
+    }
+
     .timeline li {
         grid-template-columns: 1fr;
     }
@@ -565,8 +592,13 @@ main {
         grid-template-columns: 1fr;
     }
 
-    .certification-card img {
+    .certification-card img,
+    .certification-card.certificate-wide img {
         width: min(220px, 100%);
+    }
+
+    .certification-card.certificate-wide img {
+        width: 100%;
     }
 }
 
